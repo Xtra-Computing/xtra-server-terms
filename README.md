@@ -5,10 +5,11 @@ The Xtra Computing Server provides computational resources (GPU, CPU, memory, an
 
 ## Account
 
-**Creation**
+### Creation
+
 Users must apply via the provided registration form: https://forms.gle/Wf8qbNeuSPS2ia8u6
 
-**Account Management**
+### Account Management
 
 | Event              | Action                 | Notes                                                    |
 |--------------------|------------------------|----------------------------------------------------------|
@@ -16,7 +17,7 @@ Users must apply via the provided registration form: https://forms.gle/Wf8qbNeuS
 | 6 months post-expiration | Account Removal | Data preserved temporarily in cold storage; integrity not guaranteed. |
 | 12 months post-expiration | Data Deletion | Files permanently deleted; recovery impossible.         |
 
-Administrators will contact users by email 7 days before account expiration. All notifications and alerts are communicated exclusively via your registered email address. Users are responsible for regularly checking their email.
+Administrators will contact users by email **7 days** before account expiration. All notifications and alerts are communicated exclusively via your registered email address. Users are responsible for regularly checking their email.
 
 **Unfreezing Your Account**
 To request reactivation after account freezing, contact the administrator via email at **admin@example.com**. Reactivation requests are typically processed within 1-2 business days.
