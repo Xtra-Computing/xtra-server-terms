@@ -14,10 +14,12 @@ Users must apply via the provided registration form: https://forms.gle/Wf8qbNeuS
 | Event              | Action                 | Notes                                                    |
 |--------------------|------------------------|----------------------------------------------------------|
 | Account Expiration | Account Frozen         | You cannot log in. Contact admin within 6 months to unfreeze. |
-| 6 months post-expiration | Account Removal | Data preserved temporarily in cold storage; integrity not guaranteed. |
+| 6 months post-expiration | Account Removal | Data preserved temporarily in cold-storage[^1]; integrity not guaranteed. |
 | 12 months post-expiration | Data Deletion | Files permanently deleted; recovery impossible.         |
 
-Administrators will contact users by email **7 days** before account expiration. All notifications and alerts are communicated exclusively via your registered email address.
+[^1]: Cold storage refers to a type of data storage designed for infrequently accessed data. Since moving data in and out of cold storage takes a long time, it is mainly used for archiving or backup purposes rather than for data that needs to be accessed frequently.
+
+All notifications and alerts are communicated exclusively via your registered email address.
 
 **Unfreezing Your Account**
 To request reactivation after account freezing, contact the administrator. Reactivation requests are typically processed within 1-2 business days.
@@ -32,6 +34,8 @@ To request reactivation after account freezing, contact the administrator. React
 |------------------------|-----------------|
 | PhD Students           | 512 GiB         |
 | RA & External Collaborators | 256 GiB         |
+
+
 
 Additional disk space requests are possible via email to the administrator and are considered based on project justification and resource availability.
 
@@ -83,13 +87,20 @@ For projects requiring additional GPU resources, please contact administrators t
 *Example*: For a PhD student (S=1) using 2 GPUs for 10 hours:  
 `P = 2 GPUs × 10 hours × 1 = 20 GPU-hours`
 
+Users can check their real-time GPU usage through the system monitoring tools provided. (we will provide it later)
+
 ---
 
 ## CPU & Memory
 
-Currently, we do not limit the CPU and memory usage of our users. However, excessive CPU or memory usage negatively impacting others, may result in penalties:
+Currently, we do not limit the CPU and memory usage of our users. However, excessive CPU or memory usage negatively impacting others, may result in penalties.
 
-| Offense Level | Action                                |
+Excessive usage is determined based on its impact on system stability
+
+- Out-of-memory (OOM) errors that prevent other users from accessing the server (e.g., making it impossible to SSH in).
+- Any behavior that requires administrator intervention to restore normal operations.
+
+| Offense Times | Action                                |
 |---------------|---------------------------------------|
 | 1st           | Notification                          |
 | 2nd           | Warning                               |
