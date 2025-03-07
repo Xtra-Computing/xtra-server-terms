@@ -57,21 +57,26 @@ Disk usage is tracked monthly (GB/month) across all servers, attributed uniquely
 
 ### Default Quota
 
+We aim to ensure that all users have equal and convenient access to GPU resources. Our system is designed to be as unrestricted as possible while maintaining fairness among users.
+
 | User Category          | GPUs Allowed Without Application | Scaling Factor |
 |------------------------|----------------------------------|-----|
 | PhD Students           | 2 GPUs freely                    | 1.0 |
 | RA & External Collaborators | 1 GPU freely                | 1.2 |
 
+Users can utilize GPUs freely within their quota and may also exceed their quota when additional GPUs are available and not in use by others.
+
 ### Extra GPU Usage
 
 Extra GPUs may be utilized without application when available. However, if another user requires GPU resources within their quota, they may terminate your extra usage processes using the command `kgpus`. Users whose processes are terminated will **not** be notified.
 
-If multiple users exceed GPU quotas, processes of users with the highest GPU-hour usage will be terminated first.
+This command will only terminate extra usage processes and will not affect allocated projects with approved reservations.
+
+If multiple users exceed their GPU quotas, processes of users with the highest GPU-hour usage will be terminated first.
 
 For projects requiring additional GPU resources, please contact administrators to reserve GPUs.
 
-**GPU Usage Accounting**
-GPU usage is tracked by the following formula:
+**GPU Usage Accounting:** GPU usage is tracked by the following formula:
 
 `GPU-hours (P) = Number of GPUs (N) × Hours used (H) × User-group scaling factor (S)`
 
