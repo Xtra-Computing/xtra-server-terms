@@ -73,7 +73,7 @@ We aim to ensure that all users have equal and convenient access to GPU resource
 |------------------------|----------------------------------|-----|
 | PhD Students           | 2 GPUs freely                    | 1.0 |
 | PostDoc           | 2 GPUs freely                    | 1.0 |
-| RA / Visiting Student | 2 GPU freely                | 1.2 |
+| RA / Visiting Student | 2 GPUs freely                | 1.2 |
 | External Collaborators | 1 GPU freely                | 1.3 |
 | FYP or Master Student | 1 GPU freely                | 1.3 |
 
