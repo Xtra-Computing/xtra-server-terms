@@ -39,7 +39,7 @@ To request reactivation after account freezing, contact the administrator. React
 | User Category          | Home Disk Quota |
 |------------------------|-----------------|
 | PhD Students           | 512 GiB         |
-| RA & External Collaborators | 256 GiB         |
+| Others | 256 GiB         |
 
 
 
@@ -72,7 +72,10 @@ We aim to ensure that all users have equal and convenient access to GPU resource
 | User Category          | GPUs Allowed Without Application | Scaling Factor |
 |------------------------|----------------------------------|-----|
 | PhD Students           | 2 GPUs freely                    | 1.0 |
-| RA & External Collaborators | 1 GPU freely                | 1.2 |
+| PostDoc           | 2 GPUs freely                    | 1.0 |
+| RA / Visiting Student | 2 GPU freely                | 1.2 |
+| External Collaborators | 1 GPU freely                | 1.3 |
+| FYP or Master Student | 1 GPU freely                | 1.3 |
 
 Users can utilize GPUs freely within their quota and may also exceed their quota when additional GPUs are available and not in use by others.
 
