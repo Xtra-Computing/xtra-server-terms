@@ -36,12 +36,10 @@ To request reactivation after account freezing, contact the administrator. React
 
 ### **Disk Space Allocation**
 
-| User Category          | Home Disk Quota |
+| User Category          | `home` Disk Quota |
 |------------------------|-----------------|
 | PhD Students           | 512 GiB         |
 | Others | 256 GiB         |
-
-
 
 Additional disk space requests are possible via email to the administrator and are considered based on project justification and resource availability.
 
@@ -49,7 +47,7 @@ For hosting large datasets, please contact the administrator. Dataset hosting wi
 
 ### **Data Integrity**
 
-Data integrity is not guaranteed. Users must perform regular backups. Weekly backups are recommended, with more frequent backups suggested for critical data. For critical data requiring higher reliability, use the `/shared/hdd` or `/shared/ssd` directory protected by RAIDZ2 (resilient to two drive failures).
+Data integrity is **not** guaranteed. Users must perform regular backups. Weekly backups are recommended, with more frequent backups suggested for critical data. For critical data requiring higher reliability, use the `/shared/hdd` or `/shared/ssd` directory protected by RAIDZ2 (resilient to two drive failures).
 
 ### **Privacy**
 
@@ -69,35 +67,28 @@ Disk usage is tracked monthly (GB/month) across all servers, attributed uniquely
 
 We aim to ensure that all users have equal and convenient access to GPU resources. Our system is designed to be as unrestricted as possible while maintaining fairness among users.
 
-| User Category          | GPUs Allowed Without Application | Scaling Factor |
-|------------------------|----------------------------------|-----|
-| PhD Students           | 2 GPUs freely                    | 1.0 |
-| PostDoc           | 2 GPUs freely                    | 1.0 |
-| RA / Visiting Student | 2 GPUs freely                | 1.2 |
-| External Collaborators | 1 GPU freely                | 1.3 |
-| FYP or Master Student | 1 GPU freely                | 1.3 |
+| User Category          | GPUs Allowed Without Application |
+|------------------------|----------------------------------|
+| all_user           | 2 GPUs freely                    |
+
 
 Users can utilize GPUs freely within their quota and may also exceed their quota when additional GPUs are available and not in use by others.
 
 ### Extra GPU Usage
 
-Extra GPUs may be utilized without application when available. However, if another user requires GPU resources within their quota, they may terminate your extra usage processes using the command `kgpus`. Users whose processes are terminated will **not** be notified.
+**You can use more than 2 GPUs without application.** However, other users may terminate your extra usage processes using the command `killgpu`. Users whose processes are terminated will **not** be notified.
 
-This command will only terminate extra usage processes and will not affect allocated projects with approved reservations.
+The killing unit is the GPU. Processes running on GPUs with higher indices will be killed first. All processes belonging to the same user on the targeted GPU will be terminated.
 
-If multiple users exceed their GPU quotas, processes of users with the highest GPU-hour usage will be terminated first.
+**Example:**
+
+`User 1` is using `xtraa100` and `xtrah100`, `User 2` wants to use `xtrah100` and use command `killgpu`.
+
+The `Process 6` and `Process 7` belongs to `User 1` will be terminated.
+
+![gpukill example](https://github.com/user-attachments/assets/2099f4a2-d87b-4bdd-bbcf-2c6307a4d047)
 
 For projects requiring additional GPU resources, please contact administrators to reserve GPUs.
-
-**GPU Usage Accounting:** GPU usage is tracked by the following formula:
-
-`GPU-hours (P) = Number of GPUs (N) × Hours used (H) × User-group scaling factor (S)`
-
-*Example*: For a PhD student (S=1) using 2 GPUs for 10 hours:  
-`P = 2 GPUs × 10 hours × 1 = 20 GPU-hours`
-
-Users can check their real-time GPU usage through the system monitoring tools provided. (we will provide it later)
-
 ---
 
 ## CPU & Memory
