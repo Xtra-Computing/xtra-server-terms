@@ -4,10 +4,9 @@
 The Xtra Computing Server provides computational resources (GPU, CPU, memory, and storage) primarily to support research and academic activities. Users must follow the guidelines outlined in this document to ensure fair resource allocation and maintain a productive computing environment.
 
 > [!NOTE]  
-> Resources are for Xtra Computing Group use only.
+> Resources are intended for the use of Xtra Computing Group only.
 > 
-> If your improper usage is reported, your computing tasks may be terminated.
-
+> Any misuse may result in the termination of your computing tasks.
 
 ## Account
 
@@ -74,21 +73,28 @@ We aim to ensure that all users have equal and convenient access to GPU resource
 
 Users can utilize GPUs freely within their quota and may also exceed their quota when additional GPUs are available and not in use by others.
 
+If you have compute-intensive tasks, please consider using the [HACC Cluster](https://xacchead.d2.comp.nus.edu.sg/) or the [SoC Cluster](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/access), which are better suited for high-performance computing needs.
+
 ### Extra GPU Usage
 
 **You can use more than 2 GPUs without application.** However, other users may terminate your extra usage processes using the command `killgpu`. Users whose processes are terminated will **not** be notified.
 
-The killing unit is the GPU. Processes running on GPUs with higher indices will be killed first. All processes belonging to the same user on the targeted GPU will be terminated.
+The killing unit is the **GPU**. Processes running on GPUs with higher indices will be killed first. All processes belonging to the same user on the targeted GPU will be terminated.
 
 **Example:**
 
-`User 1` is using `xtraa100` and `xtrah100`, `User 2` wants to use `xtrah100` and use command `killgpu`.
-
-The `Process 6` and `Process 7` belongs to `User 1` will be terminated.
+- `User 1` is using `xtraa100` (process 1,2,3) and `xtrah100` (process 4,5,6,7)
+- `User 2` wants to use `xtrah100` and use command `killgpu`.
+- The `Process 6` and `Process 7` belongs to `User 1` will be terminated. (GPU 1 has higher indices than GPU 2)
 
 ![gpukill example](https://github.com/user-attachments/assets/2099f4a2-d87b-4bdd-bbcf-2c6307a4d047)
 
-For projects requiring additional GPU resources, please contact administrators to reserve GPUs.
+### Reserve GPUs  
+
+To reserve GPUs, please fill out the reservation form: [Reservation Form](https://forms.gle/6W1CxQAojMANpx1FA).
+
+Reserved GPUs **will not** be terminated by the `killgpu` command.
+
 ---
 
 ## CPU & Memory
