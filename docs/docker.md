@@ -2,7 +2,7 @@
 
 
 
-## How to install rootless docker
+## 📲 Install rootless docker
 
 Please run the following commands:
 
@@ -53,7 +53,7 @@ chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
 docker compose version
 ```
 
-## How to uninstall rootless docker
+## 🗑️ Uninstall rootless docker
 
 ```shell
 rm -rf ~/.local/share/docker
