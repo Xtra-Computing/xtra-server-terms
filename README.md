@@ -87,7 +87,7 @@ The killing unit is the **GPU**. Processes running on GPUs with higher indices w
 - `User 2` wants to use `xtrah100` and use command `killgpu`.
 - The `Process 6` and `Process 7` belongs to `User 1` will be terminated. (GPU 1 has higher indices than GPU 2)
 
-![killgpu example | width=200](assets/fig1.png)
+<img src="assets/fig1.png" width="300">
 
 ### Reserve GPUs  
 
