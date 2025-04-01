@@ -37,21 +37,22 @@ Please run the following commands:
     ```bash
     docker run hello-world
     ```
+    
 6. Install docker compose plugin (optional)
 
-```bash
-DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
-mkdir -p $DOCKER_CONFIG/cli-plugins
-curl -SL https://github.com/docker/compose/releases/download/v2.34.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
-```
-
-```bash
-chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
-```
-
-```bash
-docker compose version
-```
+    ```bash
+    DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
+    mkdir -p $DOCKER_CONFIG/cli-plugins
+    curl -SL https://github.com/docker/compose/releases/download/v2.34.0/docker-compose-linux-x86_64 -o $DOCKER_CONFIG/cli-plugins/docker-compose
+    ```
+    
+    ```bash
+    chmod +x $DOCKER_CONFIG/cli-plugins/docker-compose
+    ```
+    
+    ```bash
+    docker compose version
+    ```
 
 ## 🗑️ Uninstall rootless docker
 
