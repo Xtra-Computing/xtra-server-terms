@@ -2,7 +2,7 @@
 
 
 
-## 📲 Install rootless docker
+## 📲 [Install rootless docker](https://docs.docker.com/engine/security/rootless/#install)
 
 Please run the following commands:
 
@@ -38,7 +38,7 @@ Please run the following commands:
     docker run hello-world
     ```
     
-6. Install docker compose plugin (optional)
+6. [Install docker compose plugin (optional)](https://docs.docker.com/compose/install/linux/#install-the-plugin-manually)
 
     ```bash
     DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
