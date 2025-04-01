@@ -21,7 +21,7 @@ Please run the following commands:
 3. Start rootless docker
 
     ```bash
-    systemctl --$USER start docker
+    systemctl --user start docker
     ```
 
 4. Test if docker was installed
