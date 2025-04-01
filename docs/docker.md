@@ -18,18 +18,26 @@ Please run the following commands:
     export DOCKER_HOST=unix:///run/user/$UID/docker.sock
     ```
 
-3. Start rootless docker
+    c. source the rc file
+
+    ```shell
+    source ~/.bashrc
+    # or
+    # source ~/.zshrc
+    ```
+
+4. Start rootless docker
 
     ```bash
     systemctl --user start docker
     ```
 
-4. Test if docker was installed
+5. Test if docker was installed
 
     ```bash
     docker run hello-world
     ```
-5. Install docker compose plugin (optional)
+6. Install docker compose plugin (optional)
 
 ```bash
 DOCKER_CONFIG=${DOCKER_CONFIG:-$HOME/.docker}
