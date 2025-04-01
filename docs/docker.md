@@ -1,24 +1,36 @@
-# How to install rootless docker
+# Rootless Docker
+
+
+
+## How to install rootless docker
 
 Please run the following commands:
 
 1. `curl -sSL https://get.docker.com/rootless | sh`
-2. open the `.bashrc` file or `.zshrc` file. (depends on your shell)
-3. Add the following two environmental variables to the end of the file.
+2. Follow the instructions showed after the command
 
-```shell
-export PATH=/home/$USER/bin:$PATH
-export DOCKER_HOST=unix:///run/user/$UID/docker.sock
-```
+    a. open the `.bashrc` file or `.zshrc` file. (depends on your shell)
 
-4. Start rootless docker
+    b. Add the following two environmental variables to the end of the `.*rc` file.
 
-```bash
-systemctl --$USER start docker
-```
+    ```shell
+    export PATH=/home/$USER/bin:$PATH
+    export DOCKER_HOST=unix:///run/user/$UID/docker.sock
+    ```
 
+3. Start rootless docker
 
-# How to uninstall rootless docker
+    ```bash
+    systemctl --$USER start docker
+    ```
+
+4. Test if docker was installed
+
+    ```bash
+    docker run hello-world
+    ```
+
+## How to uninstall rootless docker
 
 ```shell
 rm -rf ~/.local/share/docker
