@@ -5,7 +5,7 @@ The Xtra Computing Server provides computational resources (GPU, CPU, memory, an
 
 > [!IMPORTANT]
 > Resources are intended for the use of Xtra Computing Group only.
->
+
 > [!WARNING]
 > Any misuse may result in the termination of your computing tasks.
 
