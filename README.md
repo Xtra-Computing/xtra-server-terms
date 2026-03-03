@@ -135,4 +135,6 @@ Excessive usage is determined based on its impact on system stability
 
 Xtra Computing Server administrators and affiliates are not responsible for data loss, damages, or inconveniences arising from hardware failures, software issues, or user actions. Users assume full responsibility for data backups and accept resources as-is without warranty.
 
+For detailed administrator boundaries, see: [Admin Liability](docs/admin-liability.md).
+
 Last update: March 3, 2026
