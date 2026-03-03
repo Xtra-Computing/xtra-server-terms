@@ -77,23 +77,38 @@ If you have compute-intensive tasks, please consider using the [HACC Cluster](ht
 
 ### Extra GPU Usage
 
-**You can use more than 2 GPUs without application.** However, other users may terminate your extra usage processes using the command `killgpu`. Users whose processes are terminated will **not** be notified.
+**You can use more than 2 GPUs without application.**
 
-The killing unit is the **GPU**. Processes running on GPUs with higher indices will be killed first. All processes belonging to the same user on the targeted GPU will be terminated.
+### Responsible Use
 
-**Example:**
+To ensure fair and efficient utilization of our shared GPU infrastructure, we are introducing the following resource management policy effective immediately:
 
-- `User 1` is using `xtraa100` (process 1,2,3) and `xtrah100` (process 4,5,6,7)
-- `User 2` wants to use `xtrah100` and use command `killgpu`.
-- The `Process 6` and `Process 7` belongs to `User 1` will be terminated. (GPU 1 has higher indices than GPU 2)
+#### Automatic Termination Policy
 
-<img src="assets/fig1.png" width="300">
+Any process that:
+1. Occupies large GPU memory, and
+2. Maintains less than 1% GPU utilization continuously for 10 minutes
+
+will be automatically terminated by the system.
+
+#### User Responsibility
+
+Users are fully responsible for monitoring their jobs. Any loss of progress, data, or runtime caused by automatic termination under this policy is the responsibility of the job owner.
+
+Please ensure that your scripts:
+1. Do not hold GPU memory while idle
+2. Properly release resources when inactive
+3. Avoid prolonged zero-utilization states
+
+#### Temporary Exceptions
+
+Temporary exceptions may be granted on a case-by-case basis depending on the application. If your workload legitimately requires GPU memory residency with low or zero utilization, please contact the administrator in advance with justification.
+
+Thank you for your cooperation.
 
 ### Reserve GPUs  
 
 To reserve GPUs, please fill out the reservation form: [Reservation Form](https://forms.gle/6W1CxQAojMANpx1FA).
-
-Reserved GPUs **will not** be terminated by the `killgpu` command.
 
 ---
 
@@ -120,3 +135,4 @@ Excessive usage is determined based on its impact on system stability
 
 Xtra Computing Server administrators and affiliates are not responsible for data loss, damages, or inconveniences arising from hardware failures, software issues, or user actions. Users assume full responsibility for data backups and accept resources as-is without warranty.
 
+Last update: March 3, 2026
