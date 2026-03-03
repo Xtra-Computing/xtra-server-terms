@@ -4,15 +4,18 @@ This page clarifies the operational responsibility boundaries of Xtra Computing 
 
 ## What Administrators Are Responsible For
 
-- Maintaining baseline server availability and core infrastructure operations.
+- Maintaining normal server operation, baseline availability, and core infrastructure operations.
 - Applying reasonable security and access controls for shared environments.
+- Conducting server audits for security, compliance, and operational integrity when needed.
 - Enforcing published resource policies (GPU, CPU, memory, disk, and account rules).
 - Responding to service incidents that affect multiple users or platform stability.
 - Communicating major policy or operational changes through official channels.
 
 ## What Administrators Are Not Responsible For
 
+- Resource coordination between users. Users are expected to discuss and coordinate shared resource usage among themselves.
 - User code quality, training logic, experiment design, or runtime correctness.
+- Debugging user code, model pipelines, or custom scripts.
 - Data loss caused by user actions, script bugs, accidental deletion, or unsafe workflows.
 - Job interruption due to policy enforcement (including automatic termination rules).
 - Recovering files beyond available backup/retention windows.
