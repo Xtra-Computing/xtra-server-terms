@@ -15,6 +15,8 @@ The Xtra Computing Server provides computational resources (GPU, CPU, memory, an
 
 Users must apply via the provided registration form: https://forms.gle/Wf8qbNeuSPS2ia8u6
 
+Account validity is determined by the expiration date provided by the user during registration, subject to confirmation by the administrator.
+
 ### Account Management
 
 | Event              | Action                 | Notes                                                    |
@@ -50,7 +52,7 @@ For hosting large datasets, please contact the administrator. Dataset hosting wi
 
 ### **Data Integrity**
 
-Data integrity is **not** guaranteed. Users must perform regular backups. Weekly backups are recommended, with more frequent backups suggested for critical data. For critical data requiring higher reliability, use the `/shared/hdd` or `/shared/ssd` directory protected by RAIDZ2 (resilient to two drive failures).
+Data integrity is **not** guaranteed. Users must perform regular backups. Weekly backups are recommended, with more frequent backups suggested for critical data. For critical data requiring higher reliability, use the `/shared/hdd` or `/shared/ssd` directory protected by RAIDZ2 (resilient to two drive failures). There is currently no per-user quota on these shared directories; please use them responsibly.
 
 > [!IMPORTANT]
 > Backup responsibility belongs to the user. Always maintain restorable checkpoints for critical work.
@@ -142,6 +144,16 @@ Excessive usage is determined based on its impact on system stability
 | 4th           | Account frozen for 2 weeks            |
 | 5th           | Permanent ban from all infrastructures|
 
+The offense counter starts from the date of the first violation and is monitored over a rolling 1-month window. Offenses outside this window are not counted. *(Provisional rule, subject to revision.)*
+
+---
+
+## Network
+
+Users may run services on designated open ports. Port availability is governed by NUS School of Computing firewall policies and may change without notice.
+
+For full details, see: [Network Policy](docs/network.md).
+
 ---
 
 ### General Disclaimer
@@ -153,4 +165,10 @@ Xtra Computing Server administrators and affiliates are not responsible for data
 
 For detailed administrator boundaries, see: [Admin Liability](docs/admin-liability.md).
 
-Last update: March 3, 2026
+---
+
+## Contact
+
+For all administrative requests, policy questions, or exception applications, contact the administrator at: **hhh@u.nus.edu**
+
+Last update: April 5, 2026
