@@ -86,7 +86,15 @@ If you have compute-intensive tasks, please consider using the [HACC Cluster](ht
 
 ### Extra GPU Usage
 
-**You can use more than 2 GPUs without application.**
+**You can use more than 2 GPUs without application.** However, extra GPU usage beyond your quota is opportunistic and subject to preemption:
+
+- GPUs within your quota (2 GPUs) are **guaranteed** and will not be interrupted.
+- GPUs beyond your quota are **best-effort**. When another user needs GPUs to fill their own quota, your extra jobs may be terminated to free up resources.
+- The administrator will attempt to notify affected users before termination, but advance notice is not guaranteed.
+- Users running extra GPU jobs should implement checkpointing to minimize progress loss from preemption.
+
+> [!IMPORTANT]
+> Jobs exceeding your GPU quota may be terminated at any time to ensure fair access for all users. Always checkpoint your work.
 
 ### Responsible Use
 
