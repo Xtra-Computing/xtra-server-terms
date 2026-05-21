@@ -139,7 +139,9 @@ To reserve GPUs, please fill out the reservation form: [Reservation Form](https:
 
 ## CPU & Memory
 
-Currently, we do not limit the CPU and memory usage of our users. However, excessive CPU or memory usage negatively impacting others, may result in penalties.
+Each user is capped at **500 GiB of RAM** per node, enforced via the systemd `user-.slice` cgroup. Processes that try to exceed this limit will be OOM-killed within your slice only, without affecting other users or system services. Higher limits may be granted on request with justification.
+
+Beyond the RAM cap, we do not otherwise limit CPU and memory usage. However, excessive CPU or memory usage negatively impacting others, may result in penalties.
 
 Excessive usage is determined based on its impact on system stability
 
@@ -193,4 +195,4 @@ For detailed administrator boundaries, see: [Admin Liability](docs/admin-liabili
 
 For all administrative requests, policy questions, or exception applications, contact the administrator at: **hhh@u.nus.edu**
 
-Last update: April 5, 2026
+Last update: May 21, 2026
