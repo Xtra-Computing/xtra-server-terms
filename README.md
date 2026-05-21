@@ -1,5 +1,7 @@
 # Terms of Use - Xtra Computing Server
 
+*Last updated: 2026-05-21*
+
 **Introduction**
 The Xtra Computing Server provides computational resources (GPU, CPU, memory, and storage) primarily to support research and academic activities. Users must follow the guidelines outlined in this document to ensure fair resource allocation and maintain a productive computing environment.
 
@@ -152,7 +154,19 @@ Excessive usage is determined based on its impact on system stability
 | 4th           | Account frozen for 2 weeks            |
 | 5th           | Permanent ban from all infrastructures|
 
-The offense counter starts from the date of the first violation and is monitored over a rolling 1-month window. Offenses outside this window are not counted. *(Provisional rule, subject to revision.)*
+The offense counter starts from the date of the first violation and is monitored over a rolling 3-month window. Offenses outside this window are not counted. *(Provisional rule, subject to revision.)*
+
+### Docker-induced Violations
+
+Misuse via Docker containers — including (but not limited to) causing OOM errors or improperly occupying GPUs — follows its own escalation focused on Docker privileges:
+
+| Offense Times | Action                                                          |
+|---------------|-----------------------------------------------------------------|
+| 1st           | Notification                                                    |
+| 2nd           | Warning                                                         |
+| 3rd           | Permanent revocation of Docker privileges; account flagged     |
+
+The same rolling 3-month window applies. *(Provisional rule, subject to revision.)*
 
 ---
 
