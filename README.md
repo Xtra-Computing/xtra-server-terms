@@ -1,6 +1,6 @@
 # Terms of Use - Xtra Computing Server
 
-*Last updated: 2026-05-21*
+*Last updated: 2026-07-23*
 
 **Introduction**
 The Xtra Computing Server provides computational resources (GPU, CPU, memory, and storage) primarily to support research and academic activities. Users must follow the guidelines outlined in this document to ensure fair resource allocation and maintain a productive computing environment.
@@ -141,7 +141,7 @@ To reserve GPUs, please fill out the reservation form: [Reservation Form](https:
 
 Each user is capped at **500 GiB of RAM** per node, enforced via the systemd `user-.slice` cgroup. Processes that try to exceed this limit will be OOM-killed within your slice only, without affecting other users or system services. Higher limits may be granted on request with justification.
 
-Beyond the RAM cap, we do not otherwise limit CPU and memory usage. However, excessive CPU or memory usage negatively impacting others, may result in penalties.
+CPU usage is not capped by default. Users who persistently consume excessive CPU resources will have a CPU quota imposed, limiting their total CPU usage to one quarter (1/4) of the machine's available CPU cores. Beyond the RAM cap, memory usage is not otherwise limited. However, excessive memory usage that negatively impacts others may result in penalties.
 
 Excessive usage is determined based on its impact on system stability
 
