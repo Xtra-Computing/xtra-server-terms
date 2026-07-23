@@ -39,6 +39,21 @@ To request reactivation after account freezing, contact the administrator. React
 
 ---
 
+## Acceptable Use and Security
+
+Users must not:
+
+- Share accounts, passwords, SSH keys, access tokens, or any other credentials.
+- Mine cryptocurrency or use server resources for related activities.
+- Conduct unauthorized attacks, vulnerability scans, network scans, malware activity, or attempts to disrupt systems or other users.
+- Bypass, evade, disable, or interfere with resource limits, monitoring, access controls, or policy-enforcement mechanisms.
+- Store, distribute, or process unlawful content, or violate software licenses, copyrights, or other intellectual-property rights.
+- Process sensitive, regulated, confidential, or research-participant data without prior approval from the administrator and any other approvals required by applicable institutional policies.
+
+This list is not exhaustive. Upon discovery of any such activity, the account will be permanently banned. These violations are not subject to the progressive offense schedule described below.
+
+---
+
 ## Disk
 
 ### **Disk Space Allocation**
@@ -54,14 +69,14 @@ For hosting large datasets, please contact the administrator. Dataset hosting wi
 
 ### **Data Integrity**
 
-Data integrity is **not** guaranteed. Users must perform regular backups. Weekly backups are recommended, with more frequent backups suggested for critical data. For critical data requiring higher reliability, use the `/shared/hdd` or `/shared/ssd` directory protected by RAIDZ2 (resilient to two drive failures). There is currently no per-user quota on these shared directories; please use them responsibly.
+Data integrity is **not** guaranteed. Users must perform regular backups. Weekly backups are recommended, with more frequent backups suggested for critical data. The `/shared/hdd` and `/shared/ssd` directories use RAIDZ2 for fault tolerance against up to two drive failures. RAIDZ2 is **not a backup** and does not protect against every form of data loss. There is currently no per-user quota on these shared directories; please use them responsibly.
 
 > [!IMPORTANT]
 > Backup responsibility belongs to the user. Always maintain restorable checkpoints for critical work.
 
 ### **Privacy**
 
-By using the servers, users consent to file reviews by administrators to ensure compliance. Reviews typically occur in response to specific incidents, abnormal resource usage, or during security audits. We never do routine or random inspections for no reason.
+Administrators may collect and review necessary access, security, audit, system, and resource-usage logs and metrics for operations, security, capacity planning, incident response, and policy enforcement. Administrators may also review files when investigating incidents, abnormal resource usage, security concerns, or suspected policy violations. By using the servers, users consent to this monitoring and review.
 
 **Do not** store private or sensitive files (e.g., personal photos, videos, confidential documents).
 
@@ -84,15 +99,18 @@ We aim to ensure that all users have equal and convenient access to GPU resource
 
 Users can utilize GPUs freely within their quota and may also exceed their quota when additional GPUs are available and not in use by others.
 
+The GPU quota defines the maximum standard allocation that may be used without an application. It is not a guarantee of GPU availability, uninterrupted access, job completion, or performance.
+
 If you have compute-intensive tasks, please consider using the [HACC Cluster](https://xacchead.d2.comp.nus.edu.sg/) or the [SoC Cluster](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/access), which are better suited for high-performance computing needs.
 
 ### Extra GPU Usage
 
 **You can use more than 2 GPUs without application.** However, extra GPU usage beyond your quota is opportunistic and subject to preemption:
 
-- GPUs within your quota (2 GPUs) are **guaranteed** and will not be interrupted.
+- Jobs using GPUs within the standard quota are not guaranteed to remain available or uninterrupted.
 - GPUs beyond your quota are **best-effort**. When another user needs GPUs to fill their own quota, your extra jobs may be terminated to free up resources.
-- The administrator will attempt to notify affected users before termination, but advance notice is not guaranteed.
+- Any GPU job may also be interrupted or terminated because of maintenance, failures, security incidents, policy enforcement, or other operational needs.
+- The administrator may attempt to notify affected users before termination, but advance notice is not guaranteed.
 - Users running extra GPU jobs should implement checkpointing to minimize progress loss from preemption.
 
 > [!IMPORTANT]
@@ -108,7 +126,7 @@ Any process that:
 1. Occupies large GPU memory, and
 2. Maintains less than 1% GPU utilization continuously for 10 minutes
 
-will be automatically terminated by the system.
+may be automatically terminated by the system.
 
 > [!WARNING]
 > Low-utilization, high-memory GPU jobs are subject to automatic termination.
@@ -139,9 +157,9 @@ To reserve GPUs, please fill out the reservation form: [Reservation Form](https:
 
 ## CPU & Memory
 
-Each user is capped at **500 GiB of RAM** per node, enforced via the systemd `user-.slice` cgroup. Processes that try to exceed this limit will be OOM-killed within your slice only, without affecting other users or system services. Higher limits may be granted on request with justification.
+Each user is subject to a **500 GiB RAM limit** per node, normally enforced via the systemd `user-.slice` cgroup. Processes that exceed this limit may be OOM-killed within the user's slice. Enforcement behavior and process isolation are not guaranteed. Higher limits may be granted on request with justification.
 
-CPU usage is not capped by default. Users who persistently consume excessive CPU resources will have a CPU quota imposed, limiting their total CPU usage to one quarter (1/4) of the machine's available CPU cores. Beyond the RAM cap, memory usage is not otherwise limited. However, excessive memory usage that negatively impacts others may result in penalties.
+CPU usage is not capped by default. On a single machine, if a user's processes continuously consume CPU capacity equivalent to more than 50% of that machine's logical CPU cores for more than 8 consecutive hours, a per-machine CPU quota will be imposed without advance notice. The quota limits the user's aggregate CPU usage on that machine to one quarter (1/4) of its logical CPU cores. Once imposed, the quota remains in effect permanently. Beyond the RAM cap, memory usage is not otherwise limited. However, excessive memory usage that negatively impacts others may result in penalties.
 
 Excessive usage is determined based on its impact on system stability
 
@@ -152,11 +170,13 @@ Excessive usage is determined based on its impact on system stability
 |---------------|---------------------------------------|
 | 1st           | Notification                          |
 | 2nd           | Warning                               |
-| 3rd           | Account frozen for 2 day              |
+| 3rd           | Account frozen for 2 days             |
 | 4th           | Account frozen for 2 weeks            |
 | 5th           | Permanent ban from all infrastructures|
 
 The offense counter starts from the date of the first violation and is monitored over a rolling 3-month window. Offenses outside this window are not counted. *(Provisional rule, subject to revision.)*
+
+Administrators may determine that a violation occurred and impose a penalty based on their operational judgment; no formal evidence or evidentiary procedure is required. Affected users may appeal by contacting the administrator. The administrator has sole and final authority to interpret these terms and determine the outcome of violations, exceptions, enforcement actions, and appeals.
 
 ### Docker-induced Violations
 
@@ -182,7 +202,7 @@ For full details, see: [Network Policy](docs/network.md).
 
 ### General Disclaimer
 
-Xtra Computing Server administrators and affiliates are not responsible for data loss, damages, or inconveniences arising from hardware failures, software issues, or user actions. Users assume full responsibility for data backups and accept resources as-is without warranty.
+All machines, services, and resources are provided entirely **as-is** and **as-available**, without any promise or guarantee of availability, uptime, access, capacity, allocation, uninterrupted execution, job completion, data durability, performance, compatibility, or support. Nothing in these terms or related documents creates a service-level commitment. Xtra Computing Server administrators and affiliates are not responsible for data loss, damages, or inconveniences arising from hardware failures, software issues, operational actions, policy enforcement, or user actions. Users assume full responsibility for data backups and use the resources at their own risk.
 
 > [!CAUTION]
 > Service is provided as-is without warranty. Keep independent backups and recovery plans.
@@ -195,4 +215,4 @@ For detailed administrator boundaries, see: [Admin Liability](docs/admin-liabili
 
 For all administrative requests, policy questions, or exception applications, contact the administrator at: **hhh@u.nus.edu**
 
-Last update: May 21, 2026
+Last update: July 23, 2026

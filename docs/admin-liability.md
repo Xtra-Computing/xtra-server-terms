@@ -1,10 +1,10 @@
 # Admin Liability
 
-This page clarifies the operational responsibility boundaries of Xtra Computing Server administrators.
+This page clarifies the operational responsibility boundaries of Xtra Computing Server administrators. All administrative activities and support are provided on a best-effort basis and do not create any promise, guarantee, warranty, or service-level commitment.
 
 ## What Administrators Are Responsible For
 
-- Maintaining normal server operation, baseline availability, and core infrastructure operations.
+- Making reasonable, best-effort efforts to maintain server operation and core infrastructure.
 - Applying reasonable security and access controls for shared environments.
 - Conducting server audits for security, compliance, and operational integrity when needed.
 - Enforcing published resource policies (GPU, CPU, memory, disk, and account rules).
