@@ -39,6 +39,21 @@ All notifications and alerts are communicated exclusively via your registered em
 **Unfreezing Your Account**
 To request reactivation after account freezing, contact the administrator. Reactivation requests are typically processed within 1-2 business days.
 
+### Leaving the Research Group
+
+Access to Xtra Computing servers normally ends when a user leaves the Xtra Computing Research Group or NUS.
+
+Upon departure:
+
+- The user's account will be frozen on or shortly after the departure date.
+- A short temporary access period may be granted solely for transferring research data or completing account migration.
+- Continued access for ongoing Xtra Computing research requires explicit approval from the PI or server administrator, with a specified purpose and expiration date.
+- Server resources must not be used for personal work, external projects, employment, or research unrelated to the Xtra Computing Research Group.
+
+Users should migrate required data and computing environments before leaving the group. After the account is frozen, the standard account expiration and data-retention rules described above apply.
+
+Exceptions are granted only on a case-by-case basis and may be revoked at any time due to security, operational, or SoC IT requirements.
+
 ---
 
 ## Acceptable Use and Security
