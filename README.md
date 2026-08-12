@@ -21,6 +21,9 @@ Users must apply via the provided registration form: https://forms.gle/Wf8qbNeuS
 
 Account validity is determined by the expiration date provided by the user during registration, subject to confirmation by the administrator.
 
+After approval, follow the [Getting Started Guide](docs/getting-started.md) for
+account onboarding, server addresses, and basic resource-use rules.
+
 ### Account Management
 
 | Event              | Action                 | Notes                                                    |

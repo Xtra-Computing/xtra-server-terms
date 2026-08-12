@@ -33,6 +33,9 @@ Users may run services on ports within the following ranges:
 
 Ports outside these ranges are blocked by default.
 
+Regular users may run `sudo ufw status` to view the firewall status. (This
+command has been allowed for all users.)
+
 ## User Responsibilities
 
 - Only bind ports within the user-available ranges listed above.
