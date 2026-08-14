@@ -53,7 +53,6 @@ Upon departure:
 
 - The user's account is frozen on the departure date. Login access ends at that point.
 - No advance notice, reminder, or expiry warning is sent before access is terminated. It is entirely the user's responsibility to migrate their data and computing environments before their departure date.
-- Continued access for ongoing Xtra Computing research requires explicit approval from the PI or server administrator, obtained **before** departure, with a specified purpose and expiration date.
 - Server resources must not be used for personal work, external projects, employment, or research unrelated to the Xtra Computing Research Group.
 
 Once the account is frozen, any remaining data is handled under the standard data-retention rules described in [Account Management](#account-management): moved to cold storage after 6 months and permanently deleted after 12 months. Data integrity in cold storage is not guaranteed, and retrieval requests may be declined.
