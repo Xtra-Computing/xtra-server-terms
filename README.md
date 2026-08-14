@@ -44,16 +44,19 @@ To request reactivation after account freezing, contact the administrator. React
 
 ### Leaving the Research Group
 
-Access to Xtra Computing servers normally ends when a user leaves the Xtra Computing Research Group or NUS.
+Access to Xtra Computing servers ends immediately when a user leaves the Xtra Computing Research Group or NUS.
+
+> [!CAUTION]
+> **Back up your data before you leave.** Your access is terminated on your departure date. You will not receive any advance reminder that your account is about to expire, and no grace period is provided for retrieving data afterwards.
 
 Upon departure:
 
-- The user's account will be frozen on or shortly after the departure date.
-- A short temporary access period may be granted solely for transferring research data or completing account migration.
-- Continued access for ongoing Xtra Computing research requires explicit approval from the PI or server administrator, with a specified purpose and expiration date.
+- The user's account is frozen on the departure date. Login access ends at that point.
+- No advance notice, reminder, or expiry warning is sent before access is terminated. It is entirely the user's responsibility to migrate their data and computing environments before their departure date.
+- Continued access for ongoing Xtra Computing research requires explicit approval from the PI or server administrator, obtained **before** departure, with a specified purpose and expiration date.
 - Server resources must not be used for personal work, external projects, employment, or research unrelated to the Xtra Computing Research Group.
 
-Users should migrate required data and computing environments before leaving the group. After the account is frozen, the standard account expiration and data-retention rules described above apply.
+Once the account is frozen, any remaining data is handled under the standard data-retention rules described in [Account Management](#account-management): moved to cold storage after 6 months and permanently deleted after 12 months. Data integrity in cold storage is not guaranteed, and retrieval requests may be declined.
 
 Exceptions are granted only on a case-by-case basis and may be revoked at any time due to security, operational, or SoC IT requirements.
 
