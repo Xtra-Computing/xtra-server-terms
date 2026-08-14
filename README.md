@@ -238,4 +238,4 @@ For detailed administrator boundaries, see: [Admin Liability](docs/admin-liabili
 
 For all administrative requests, policy questions, or exception applications, contact the administrator at: **hhh@u.nus.edu**
 
-Last update: July 23, 2026
+Last update: August 14, 2026
