@@ -121,7 +121,7 @@ Users can utilize GPUs freely within their quota and may also exceed their quota
 
 The GPU quota defines the maximum standard allocation that may be used without an application. It is not a guarantee of GPU availability, uninterrupted access, job completion, or performance.
 
-If you have compute-intensive tasks, please consider using the [HACC Cluster](https://xacchead.d2.comp.nus.edu.sg/) or the [SoC Cluster](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/access), which are better suited for high-performance computing needs.
+If you have compute-intensive tasks, please consider using the [HACC Cluster](https://hacc.xtra.science) or the [SoC Cluster](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/access), which are better suited for high-performance computing needs. To use the HACC Cluster, submit the [HACC cluster account application](https://forms.gle/fvfPgJypd1sSWzHm8). Note that the SoC Cluster documentation is only accessible from within the SoC intranet.
 
 ### Extra GPU Usage
 

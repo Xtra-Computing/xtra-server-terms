@@ -120,7 +120,7 @@ Xtra Computing 服务器提供计算资源（GPU、CPU、内存与存储），�
 
 GPU 配额指的是无需申请即可使用的标准分配上限，并不构成对 GPU 可用性、访问连续性、任务完成或性能的保证。
 
-如有高强度计算任务，建议使用 [HACC 集群](https://xacchead.d2.comp.nus.edu.sg/) 或 [SoC 集群](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/access)，它们更适合高性能计算需求。
+如有高强度计算任务，建议使用 [HACC 集群](https://hacc.xtra.science) 或 [SoC 集群](https://dochub.comp.nus.edu.sg/cf/guides/compute-cluster/access)，它们更适合高性能计算需求。使用 HACC 集群需填写 [HACC 集群账号申请表](https://forms.gle/fvfPgJypd1sSWzHm8)。请注意，SoC 集群的文档需在 SoC 内网环境下才能访问。
 
 ### 超额使用 GPU
 
