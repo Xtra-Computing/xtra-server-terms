@@ -1,6 +1,6 @@
 # Terms of Use - Xtra Computing Server
 
-*Last updated: 2026-07-23*
+*Last updated: 2026-08-14*
 
 [English](README.md) | [中文](README.zh-CN.md)
 
