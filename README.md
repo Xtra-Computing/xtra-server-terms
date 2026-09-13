@@ -1,6 +1,6 @@
 # Terms of Use - Xtra Computing Server
 
-*Last updated: 2026-08-14*
+*Last updated: 2026-09-02*
 
 [English](README.md) | [中文](README.zh-CN.md)
 
@@ -211,6 +211,31 @@ Misuse via Docker containers — including (but not limited to) causing OOM erro
 | 3rd           | Permanent revocation of Docker privileges; account flagged     |
 
 The same rolling 3-month window applies. *(Provisional rule, subject to revision.)*
+
+---
+
+## Containers
+
+> [!IMPORTANT]
+> **Docker access for regular users is being removed by default at the end of
+> September 2026 (from 2026-09-30).** Migrate Docker-based workloads to
+> Apptainer before then. Apptainer supports most Docker/OCI images and is
+> suitable for GPU and HPC workloads.
+
+Apptainer runs containers as your own user, without a daemon or a
+root-equivalent group, and keeps workloads visible to per-user resource
+accounting. It is already installed on the shared compute nodes.
+
+Docker access may still be granted for exceptional cases where it is technically
+necessary. If you rely on Docker-specific features that cannot easily be
+migrated, contact the administrators **in advance**, before the cutover date.
+
+For migration instructions, command equivalents, and the exception request
+procedure, see: [Containers: Docker Deprecation and Apptainer](docs/apptainer.md).
+
+The escalation schedule in [Docker-induced Violations](#docker-induced-violations)
+applies to Apptainer misuse as well, with container privileges revoked in place
+of Docker privileges.
 
 ---
 
