@@ -2,6 +2,8 @@
 
 *Last updated: 2026-09-02*
 
+<sub>Approved by Junyi Hou and Hongshi Tan.</sub>
+
 [English](apptainer.md) | [中文](apptainer.zh-CN.md)
 
 > [!IMPORTANT]
