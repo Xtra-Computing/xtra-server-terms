@@ -39,7 +39,6 @@ addresses behind `*.ddns.comp.nus.edu.sg` may change.
 | `xtraa6k02` | `xtraa6k02.ddns.comp.nus.edu.sg` | 2 × A6000 48 GB | Requires SoC VPN or NUS Wi-Fi. |
 | `xtraa6k03` | `xtraa6k03.ddns.comp.nus.edu.sg` | 2 × A6000 48 GB | Requires SoC VPN or NUS Wi-Fi. |
 | `xtraa6k04` | `xtraa6k04.ddns.comp.nus.edu.sg` | 2 × A6000 48 GB | Requires SoC VPN or NUS Wi-Fi. |
-| `xtra4x3090` | `xtra4x3090.ddns.comp.nus.edu.sg` | Resource not recorded in the inventory | Confirm suitability with the administrator before use. |
 | `xtra-v80-0` | `xtra-v80-0.ddns.comp.nus.edu.sg` | Resource not recorded in the inventory | Confirm suitability with the administrator before use. |
 | `xtra-v80-1` | `xtra-v80-1.ddns.comp.nus.edu.sg` | Resource not recorded in the inventory | Confirm suitability with the administrator before use. |
 | `xacchead` | `xacchead.ddns.comp.nus.edu.sg` | HACC entry; 11 FPGA/AMD GPU nodes | Submit the [FPGA server account application](https://forms.gle/fvfPgJypd1sSWzHm8). |

@@ -36,7 +36,6 @@
 | `xtraa6k02` | `xtraa6k02.ddns.comp.nus.edu.sg` | 2 × A6000 48 GB | 需要 SoC VPN 或 NUS Wi-Fi。 |
 | `xtraa6k03` | `xtraa6k03.ddns.comp.nus.edu.sg` | 2 × A6000 48 GB | 需要 SoC VPN 或 NUS Wi-Fi。 |
 | `xtraa6k04` | `xtraa6k04.ddns.comp.nus.edu.sg` | 2 × A6000 48 GB | 需要 SoC VPN 或 NUS Wi-Fi。 |
-| `xtra4x3090` | `xtra4x3090.ddns.comp.nus.edu.sg` | 清单未记录资源 | 使用前向管理员确认是否适合。 |
 | `xtra-v80-0` | `xtra-v80-0.ddns.comp.nus.edu.sg` | 清单未记录资源 | 使用前向管理员确认是否适合。 |
 | `xtra-v80-1` | `xtra-v80-1.ddns.comp.nus.edu.sg` | 清单未记录资源 | 使用前向管理员确认是否适合。 |
 | `xacchead` | `xacchead.ddns.comp.nus.edu.sg` | HACC 入口；11 个 FPGA/AMD GPU 节点 | 请填写 [FPGA 服务器账号申请表](https://forms.gle/fvfPgJypd1sSWzHm8) |
