@@ -247,6 +247,12 @@ For full details, see: [Network Policy](docs/network.md).
 
 ---
 
+## News
+
+Past announcements (maintenance, outages, policy changes) are archived in [Server News](news/README.md).
+
+---
+
 ### General Disclaimer
 
 All machines, services, and resources are provided entirely **as-is** and **as-available**, without any promise or guarantee of availability, uptime, access, capacity, allocation, uninterrupted execution, job completion, data durability, performance, compatibility, or support. Nothing in these terms or related documents creates a service-level commitment. Xtra Computing Server administrators and affiliates are not responsible for data loss, damages, or inconveniences arising from hardware failures, software issues, operational actions, policy enforcement, or user actions. Users assume full responsibility for data backups and use the resources at their own risk.
