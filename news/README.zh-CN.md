@@ -4,7 +4,7 @@
 
 发给 Xtra Computing 服务器用户的通知归档：维护窗口、故障、政策变更及其他服务公告。按时间倒序排列。
 
-具体规则始终以[使用条款](../README.zh-CN.md)为准。通知仅记录何时公布了什么内容；如通知与条款不一致，以条款为准。
+具体规则始终以[使用条款](https://xtra-computing.github.io/xtra-server-terms-mkdocs/zh/terms/)为准。通知仅记录何时公布了什么内容；如通知与条款不一致，以条款为准。
 
 | 日期 | 通知 |
 |------|------|
@@ -15,6 +15,6 @@
 1. 复制 [`TEMPLATE.md`](TEMPLATE.md) 为 `YYYY-MM-DD-short-slug.md`，日期为通知发出的日期（例如 `2026-10-06-gpu-node-maintenance.md`）。
 2. 如果通知同时以中文发出，另存一份 `YYYY-MM-DD-short-slug.zh-CN.md`。
 3. 在上表以及 [`README.md`](README.md) 的表格中各加一行，按时间倒序。
-4. 如果通知涉及政策变更，请在同一个 commit 中同步更新使用条款。
+4. 如果通知涉及政策变更，请同时更新[文档仓库](https://github.com/Xtra-Computing/xtra-server-terms-mkdocs)中的使用条款。
 
 本仓库是公开的，通知中不要包含凭据、内部地址，或个别用户的姓名与使用数据。

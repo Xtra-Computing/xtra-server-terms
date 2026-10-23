@@ -5,7 +5,7 @@
 Announcements sent to Xtra Computing server users: maintenance windows,
 outages, policy changes, and other service notices. Newest first.
 
-The authoritative rules are always the [Terms of Use](../README.md). A notice
+The authoritative rules are always the [Terms of Use](https://xtra-computing.github.io/xtra-server-terms-mkdocs/terms/). A notice
 records what was announced and when; if a notice and the terms disagree, the
 terms win.
 
@@ -21,7 +21,8 @@ terms win.
    was also sent in Chinese.
 3. Add a row to the table above and to [`README.zh-CN.md`](README.zh-CN.md),
    newest first.
-4. If the notice changes policy, update the Terms of Use in the same commit.
+4. If the notice changes policy, also update the Terms of Use in the
+   [documentation repository](https://github.com/Xtra-Computing/xtra-server-terms-mkdocs).
 
 Do not put credentials, internal addresses, or individual users'
 names or usage data in a notice — this repository is public.
